@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    overflow: hidden; /* Hide scrollbars */
+}
+#game{
+    min-height: 100%;
+    min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+	
+  /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: aquamarine;
+}
+#bg{
+    min-height: 100%;
+    min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+	
+  /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+#spawn{
+    min-height: 70%;
+    min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+	
+  /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-image: url("src/custom2.PNG");
+}
+#pspawn{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    bottom:0;
+    background-image: url("src/pspawn.png");
+}
+#player{
+    min-height: 100px;
+    width: 100px;
+    background-image: url("src/player.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%,-110px);
+    transform: rotate(-15deg);
+    visibility: hidden;
+}
+#score{
+  margin-left: 10px;
+  position: absolute;
+  height: 60px;
+  width: 200px;
+  background-color: transparent;
+  color: black;
+  font-family: 'ZCOOL KuaiLe', cursive;
+  bottom: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+#life{
+  display: flex;
+  margin-right: 10px;
+  position: absolute;
+  height: 60px;
+  width: 200px;
+  background-color: transparent;
+  bottom: 65px;
+  font-size: 30px;
+  font-weight: bold;
+}
